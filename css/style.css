@@ -1,0 +1,146 @@
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Estilos del Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+/* Estilo para la sección hero (Encabezado) */
+.hero {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 150px 0;
+    position: relative;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+/* Sección ¿Por qué Elegirnos? */
+#por-que-elegirnos i {
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+#por-que-elegirnos h4 {
+    margin-top: 20px;
+}
+
+/* --- CLASES ESPECÍFICAS PARA IMÁGENES --- */
+
+/* Para las tarjetas de ITINERARIOS */
+.card-img-top {
+    width: 100%;
+    height: 250px; /* Altura para las imágenes de itinerarios */
+    object-fit: cover;
+}
+
+/* Para la galería de ANIMALES en index.html */
+.animal-img {
+    width: 100%;
+    height: 200px; /* Altura para las imágenes de animales */
+    object-fit: cover;
+}
+
+/* Para la galería de EXPERIENCIAS en index.html */
+.experience-img {
+    width: 100%;
+    height: 280px; /* Altura para las imágenes de experiencias */
+    object-fit: cover;
+}
+
+/* Para la galería en CONTACTO.HTML */
+.contact-gallery-img {
+    width: 100%;
+    height: 480px; /* Altura para la galería en la página de contacto */
+    object-fit: cover;
+}
+
+/* Para los testimonios en CONTACTO.HTML (forma de óvalo) */
+.testimonial-img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+}
+
+
+/* --- OTROS ESTILOS --- */
+
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    text-align: center;
+}
+
+#cta {
+    background-color: #28a745;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.form-control:focus {
+    border-color: #28a745;
+    box-shadow: none;
+}
+
+.btn-success:hover, .btn-lg:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .hero {
+        padding: 100px 0;
+    }
+}
