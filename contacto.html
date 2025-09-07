@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Safari Aventura</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/icon.png">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header class="bg-success text-white py-4">
+        <div class="container">
+            <h1 class="display-4">Safari Aventura</h1>
+        </div>
+    </header>
+    
+    <!-- Menú de Navegación "Sticky" -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Safari Aventura</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="itinerario.html">Itinerario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de Galería de Imágenes -->
+    <section id="galeria" class="container py-5">
+        <h2 class="text-center mb-4">Explora el Safari</h2>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="img/safari-amanecer.jpg" class="img-fluid rounded contact-gallery-img" alt="Safari al Amanecer">
+                <h5 class="mt-3">Safari al Amanecer</h5>
+                <p>Descubre la majestuosidad de los animales durante el amanecer.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="img/safari-atardecer.jpg" class="img-fluid rounded contact-gallery-img" alt="Safari al Atardecer">
+                <h5 class="mt-3">Safari al Atardecer</h5>
+                <p>Vive la experiencia del atardecer mientras los animales se preparan para la noche.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="img/rutas-safari.jpg" class="img-fluid rounded contact-gallery-img" alt="Rutas del Safari">
+                <h5 class="mt-3">Rutas del Safari</h5>
+                <p>Recorre diversas rutas a través de la sabana, observando animales salvajes en su hábitat natural.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section id="testimonios" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Lo que dicen nuestros visitantes</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="testimonial">
+                        <img src="img/profile1.jpg" class="testimonial-img mb-3" alt="Cliente 1">
+                        <p class="mt-3">"Una experiencia única. Los animales son impresionantes y el guía fue muy profesional."</p>
+                        <h5>Ana López</h5>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="testimonial">
+                        <img src="img/profile2.jpg" class="testimonial-img mb-3" alt="Cliente 2">
+                        <p class="mt-3">"El safari al amanecer es increíble. Poder ver a los animales al despertar es algo que nunca olvidaré."</p>
+                        <h5>Juan Pérez</h5>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="testimonial">
+                        <img src="img/profile3.jpg" class="testimonial-img mb-3" alt="Cliente 3">
+                        <p class="mt-3">"Fue una experiencia muy emocionante. El equipo fue excelente y la vista de los animales salvajes es algo fuera de este mundo."</p>
+                        <h5>Laura Gómez</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Formulario de Contacto -->
+    <section id="contacto" class="container py-5">
+        <h2 class="text-center">Reserva tu Safari</h2>
+        <form id="contact-form">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Enviar Reserva</button>
+        </form>
+    </section>
+    
+    <div id="alert-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
